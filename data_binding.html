@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Data Binding</title>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="root">
+		<input type="text" id="input" v-model="message">
+		<p> Text in form is {{ message }} </p>
+	<ul>
+		<li v-for="name in names" v-text="name">
+			
+		</li>
+	</ul>
+	</div>
+	
+<script type="text/javascript">
+
+	new Vue ({
+		el : '#root',
+		data : {
+			message : 'Hello World',
+			names : ['Naufaldi', 'rafif', 'satriya', 'nugra', 'agung']
+		}
+	})
+</script>
+</body>
+</html>
